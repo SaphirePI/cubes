@@ -102,7 +102,7 @@ var flashycubes = {};
     soundBuffer = new Uint8Array(analyser.fftSize);
     frequencyBuffer = new Uint8Array(analyser.frequencyBinCount);
 
-    var AUDIO_MEDIA = jsmediatags.read(window.location.origin + '/' + MUSIC_FILE, {
+    var AUDIO_MEDIA = jsmediatags.read(window.location.origin + '/cubes/' + MUSIC_FILE, {
         onSuccess: function(tag) {
           $("#music_name").html(`${tag.tags.artist} - ${tag.tags.title}`)
           $(".image").attr('src', `data:image/png;base64,${btoa(String.fromCharCode.apply(null, new Uint8Array(tag.tags.picture.data)))}`)
