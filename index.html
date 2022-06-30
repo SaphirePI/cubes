@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="./js/playback.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js" charset="utf-8"></script>
+
+    <meta charset="utf-8">
+    <title>AspireDEV</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/visual.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body onload="
+      var canvas = document.getElementById('screen');
+      var volume = document.getElementById('volume_display');
+      flashycubes.init(canvas, volume);">
+    <div class="container">
+        <div class="contents">
+            <ul>
+                <li><a href="#"><span>// </span>now_playing("<span id="music_name">-------</span>")</a></li>
+                
+                <li>&nbsp;</li>
+                <li><a target="_blank" href="https://github.com/saphirepi"><span>// </span>github();</a></li>
+                <li><a href="#"><span>// </span>discord("X-49#3838");</a></li>
+                <li><a target="_blank" href="https://t.me/saphirepi"><span>// </span>telegram();</a></li>
+                <li>&nbsp;</li>
+                <li>
+                    <span class="uncommented">
+                        set_volume(<span id="volume_display">0</span>);
+                    </span> // scroll
+                </li>
+            </ul>
+        </div>
+        <canvas id="screen">
+            Ваш браузер не поддерживает canvas!
+        </canvas>
+    </div>
+    <center>
+        <span class="title">X-49 / SaphirePi.~ / Nefelit</span>
+    </center>
+</body>
+
+</html>
