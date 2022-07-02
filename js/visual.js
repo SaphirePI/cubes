@@ -12,7 +12,7 @@ var flashycubes = {};
   var PARALLAX_AMOUNT = 0.2;
   var MUSIC_NUMBER = Math.random() * 3 | 0;
   var MUSIC_FILE = `./music/${MUSIC_NUMBER + 1}.mp3`;
-  var MUSIC_OFFSET = MUSIC_NUMBER == 2 ? 130 : 0;
+  var MUSIC_OFFSET = MUSIC_NUMBER == 1 ? 130 : 0;
   var FADE_TIME = 5;
   var VOLUME_FADE_TIME = 0.1;
   var INITIAL_VOLUME = 0.5;
