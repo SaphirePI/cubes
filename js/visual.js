@@ -10,7 +10,7 @@ var flashycubes = {};
   var AMPLITUDE_SAMPLES = 1024;
   var N_STARS = 300;
   var PARALLAX_AMOUNT = 0.2;
-  var MUSIC_NUMBER = Math.random() * 3 | 0;
+  var MUSIC_NUMBER = Math.random() * 11 | 0;
   var MUSIC_FILE = `./music/${MUSIC_NUMBER + 1}.mp3`;
   var MUSIC_OFFSET = MUSIC_NUMBER == 1 ? 130 : 0;
   var FADE_TIME = 5;
