@@ -10,9 +10,10 @@ var flashycubes = {};
   var AMPLITUDE_SAMPLES = 1024;
   var N_STARS = 300;
   var PARALLAX_AMOUNT = 0.2;
-  var MUSIC_NUMBER = Math.random() * 11 | 0;
-  var MUSIC_FILE = `./music/${MUSIC_NUMBER + 1}.mp3`;
-  var MUSIC_OFFSET = MUSIC_NUMBER == 1 ? 130 : 0;
+  //var MUSIC_NUMBER = Math.random() * 11 | 0;
+  var MUSIC_LIST = ['https://i.minerea.su/RxKM.mp3', 'https://i.minerea.su/T4u2.mp3', 'https://i.minerea.su/RO4V.mp3', 'https://i.minerea.su/x1n1.mp3', 'https://i.minerea.su/JDfd.mp3', 'https://i.minerea.su/UjOZ.mp3']
+  var MUSIC_FILE = MUSIC_LIST[Math.floor(Math.random() * MUSIC_LIST.length)];
+  var MUSIC_OFFSET = 0;
   var FADE_TIME = 5;
   var VOLUME_FADE_TIME = 0.1;
   var INITIAL_VOLUME = 0.5;
